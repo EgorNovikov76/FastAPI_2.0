@@ -11,13 +11,12 @@ def list_items():
         "item1",
         "item2",
         "item3",
-        ]
+    ]
 
 
 @router.get("/latest/")
 def get_latest_item():
     return {"item": {"id": "0", "name": "latest"}}
-
 
 
 @router.get("/{item_id}/")
